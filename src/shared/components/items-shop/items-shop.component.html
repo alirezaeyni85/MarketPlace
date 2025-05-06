@@ -1,0 +1,40 @@
+<section class="items-shop-container">
+    <div class="header-content">
+        <h4>Trending Bids</h4>
+          <div class="links">
+            <ul>
+                <li><a href=""  class="active-link">All</a></li>
+                <li><a href="">ArtWork</a></li>
+                <li><a href="">Book</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="container-items-shopping">
+    
+      <div class="item-shopping" *ngFor="let item of items">
+        <img src="../assets/images/NFTS.png" alt="">
+        <h3>{{item.title}}</h3> 
+        <div class="active-time" >
+          <p *ngFor="let ativeTm of item.activeTime   ">{{ativeTm}}</p>
+          
+          
+        </div>
+        <span class="time-end">0.05 ETH</span>
+       <div class="active-time finish-time">
+          <p>3h 1m 50s</p>
+           <p>0.15 ETH</p>
+       </div>
+       <div class="btn-buy">
+        <button (click)="onSave(item.id)" >Place a Bid</button>
+       </div>
+      </div>
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    </section>
+    

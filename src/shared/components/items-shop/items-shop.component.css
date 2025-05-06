@@ -1,0 +1,44 @@
+*{
+    --color-white:white;
+    --bg-purple:#6F4FF2;
+    --ligh-purple:#6C7AA0;
+    --bg-brown:#1D1932;
+    --dis-flex:flex;
+    --border-radius:2rem;
+
+}
+.header-content{
+    display: var(--dis-flex);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 1.5rem ;
+}
+.items-shop-container{
+    color: var(--color-white);
+}
+
+.links ul  {
+    display: var(--dis-flex);
+    column-gap: 1rem;
+}
+.links ul .active-link {
+    padding: 0.2rem  0.8rem;
+    border-radius: var(--border-radius);
+    background: var(--bg-purple);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.links ul li {
+    list-style: none;
+}
+.links ul li a {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+/* item of Shpping */

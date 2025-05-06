@@ -1,0 +1,38 @@
+<section>
+    <div class="active-users-container">
+        <div class="header-users ">
+            <h3>Recent Activity</h3>
+            <p>See more</p>
+        </div>
+             <div class="users-contianer">
+                <div class="active-users" *ngFor="let user of usersActive">
+                    <img src="../assets\AvatarIcon.png" alt="">
+                    <div class="info-user">
+                        <h4>{{user.title}}</h4>
+                        <p>{{user.info}}</p>
+                    </div>
+                    <div class="last-seen-user">
+                        <p>{{user.lastSeen}}</p>
+                    </div>
+                </div>
+             </div>
+    </div>
+    <div class="right-users-creators">
+        <div class="header-users-creators">
+            <h3>Top Creators</h3>
+        </div>
+        <div class="users-right-creators">
+            <div class="user-creators" *ngFor="let user of usersCreators" >
+    
+                <img src="../assets\AvatarIcon.png" alt="">
+                <div class="info-user">
+                    <h4>{{user.title}}</h4>
+                    <p>{{user.countItems}}</p>
+                </div>
+               <button class="btn-follow">Follow</button>
+         
+        </div>   
+        </div>
+    </div>
+    </section>
+    

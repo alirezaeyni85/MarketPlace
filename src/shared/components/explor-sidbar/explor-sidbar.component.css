@@ -1,0 +1,112 @@
+*{
+    --white:white;
+    --light-purple:#6F4FF2;
+    --brown:#1D1932;
+    --light-green:#50BA23;
+    --light-red:#DC3546;
+}
+
+
+article{
+    display: grid;
+    grid-template-columns:46.3% 50.7%;
+    column-gap: 3rem;
+    margin-top:2.5rem ;
+ 
+}
+
+.left-card {
+   display: grid;
+   color: var(--white);
+   /* background-image:url("E:\programing\AngularProjectNew\MarketPlace\MarketPlace\src\assets\imges\Discover.png"); */
+   background-image: url('/home/alireza/Programming/AngularProjects/shopping/src/assets/images/Discover.png');
+   
+   padding: 1.5rem 1.5rem 0 1.5rem;
+
+   filter:blur(0.2px) ;
+   
+
+   -webkit-filter:blur(0.2px) ;
+}
+.left-card h3 {
+    width: 311px;
+    font-size: 26px;
+    font-weight: 800;
+}
+.left-card p {
+    font-size: 14px;
+    font-family:sans-serif;
+    /* padding:  0.5rem 0; */
+}
+.left-card .btns-buttom{
+    display: flex;
+    /* column-gap: 2rem; */
+    /* margin-left: 1rem; */
+}
+.btns-buttom button {
+    align-items: center;
+    margin-top: 1rem;
+    
+    max-height: 40px;
+    max-width: 137px;
+    font-weight: 700;
+    color: var(--white);
+    border: none;
+    background-color: var(--light-purple);
+
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.btns-buttom :last-child{
+    background-color: var(--light-red);
+
+}
+
+
+/* right card */
+.right-card {
+    color: var(--white);
+    background: var(--brown);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.prof-user {
+    display: flex;
+    align-items: center;
+    font-weight: 700 ;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.info-user h3 {
+    /* padding: 1rem 0; */
+    margin-top: 0.4rem  ;
+}
+.prof-user h4 {
+    margin: 0 0.8rem;
+}
+.prof-user li {
+    color: var(--light-green);
+}
+.active-time {
+    display: flex;
+    column-gap: 5rem;
+    margin: 0.5rem 0;
+}
+.finish-time {
+  
+    column-gap: 11.5rem;
+}
+.btns-buttom :last-child{
+margin-left: 2rem;
+}

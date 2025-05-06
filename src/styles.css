@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-items-shopping {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+.item-shopping {
+    padding: 29px;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-brown);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.item-shopping h3 {
+    padding: 1rem 0;
+}
+.active-time {
+    display: var(--dis-flex);
+    column-gap: 5rem;
+    margin: 0.5rem 0;
+}
+.finish-time {
+    color: var(--ligh-purple);
+    column-gap: 6.8rem;
+}
+.time-end{
+   margin-left: 11rem;
+   color: var(--bg-purple);
+}
+.btn-buy {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 0.8rem;
+    background: var(--bg-purple);
+    text-align: center;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    
+}
+.btn-buy button {
+    font-size: 1rem;
+    color:var(--color-white);
+    background: transparent;
+    border: none;
+}

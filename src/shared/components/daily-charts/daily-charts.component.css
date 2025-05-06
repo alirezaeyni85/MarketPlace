@@ -1,0 +1,111 @@
+section {
+    margin-top: 5rem;
+}
+.container-charts{
+    display: grid;
+    grid-template-columns: 25% 43% 25%;
+    align-items:start;
+    column-gap: 1rem;
+   
+}
+.navbar-header{
+    margin-left: 0.5rem;
+    display: grid;
+    grid-template-columns: 26% 45% 25%;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cards{
+    color: white;
+
+    display: grid;
+    
+}
+.card{
+
+    background: #1D1932;
+    display: flex;
+    column-gap: 2.5rem;
+    padding: 1.3rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    margin-bottom: 2.3rem;
+}
+.card svg {
+    background:#6F4FF2 ;
+    padding: 1rem;
+    border-radius: 1.4rem;
+    -webkit-border-radius: 1.4rem;
+    -moz-border-radius: 1.4rem;
+    -ms-border-radius: 1.4rem;
+    -o-border-radius: 1.4rem;
+}
+.percent-followers {
+    position: relative;
+    bottom: 0.5rem;
+    color: #50BB25;
+
+}
+.card:nth-child(2) svg{
+    background-color: red;
+}
+.card:nth-child(2) .percent-followers{
+    color: red;
+}
+
+
+.card:nth-child(3) svg{
+    background-color: #50BB25;
+}
+
+/* img chartPrice */
+.chart-price img {
+  
+
+    padding: 2rem;
+    background: #1D1932;
+
+    border-radius: 1.4rem;
+    -webkit-border-radius: 1.4rem;
+    -moz-border-radius: 1.4rem;
+    -ms-border-radius: 1.4rem;
+    -o-border-radius: 1.4rem;
+}
+
+
+/* circle chart */ 
+.chart-Artwork {
+    width: 360px;
+    border-radius: 1.4rem;
+    -webkit-border-radius: 1.4rem;
+    -moz-border-radius: 1.4rem;
+    -ms-border-radius: 1.4rem;
+    -o-border-radius: 1.4rem;
+    padding: 2rem;
+    text-align: center;
+    background: #1D1932;
+
+}
+.chart-Artwork img{
+
+
+}
+.colors-active-chart{
+    display: flex;
+justify-content: space-around;
+      padding-top: 0.7rem;
+      color: white;
+
+}
+
+.colors-active-chart .active-circle {
+    display: flex;
+    column-gap: 1rem;
+
+}
