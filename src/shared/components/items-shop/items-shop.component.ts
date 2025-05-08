@@ -17,11 +17,11 @@ export class ItemsShopComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = this.itemsService.items;
-    console.log(this.items)
+
   }
 
   onSave(id:number){
- this.saveItems.savedItems.push( this.itemsService.items.filter(item=>item.id == id));
+this.saveItems.savedItems.push(...this.itemsService.items.filter(item=>item.id == id) );
 
   }
 

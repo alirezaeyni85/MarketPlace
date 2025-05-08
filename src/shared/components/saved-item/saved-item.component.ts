@@ -1,20 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SavedItemsService } from '../../../core/Services/savedItems.service';
 import { CommonModule, NgFor } from '@angular/common';
 import { ItemsInter } from '../../../core/interfaces/items';
+import { HeadRoutePageComponent } from "../head-route-page/head-route-page.component";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-saved-item',
-  imports: [CommonModule],
+  imports: [CommonModule, HeadRoutePageComponent, ],
   templateUrl: './saved-item.component.html',
   styleUrl: './saved-item.component.css',
   standalone:true,
 })
 export class SavedItemComponent implements OnInit {
+  public x =''
   public items:ItemsInter[] = [];
-constructor(private savedItems:SavedItemsService){}
+  public dataRoute:any = ''
+constructor(private savedItems:SavedItemsService,private activeRoute:ActivatedRoute){}
   ngOnInit(): void {
     this.items = this.savedItems.savedItems!;
-    console.log(this.items)
+   console.log(this.savedItems.savedItems)
+    this.dataRoute = this.activeRoute.snapshot.data[0];
+
+
+    
 }
 }

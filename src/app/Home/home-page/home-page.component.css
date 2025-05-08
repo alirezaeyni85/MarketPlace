@@ -9,10 +9,10 @@
 }
 
 .contianer{
-width: 100%;
 display: var(--dis-grid);
 grid-template-columns: 6% 94%;
 background-color:var(--bg-dark) ;
+height: 400vh;
 }
 
 .left-content {

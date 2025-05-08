@@ -7,10 +7,11 @@ import { AppComponent } from "../../app.component";
 import { RouterModule } from '@angular/router';
 import { NgIf } from '@angular/common';
 import { SavedItemsService } from '../../../core/Services/savedItems.service';
+import { HeadRoutePageComponent } from "../../../shared/components/head-route-page/head-route-page.component";
 
 @Component({
   selector: 'app-home-page',
-  imports: [ItemsShopComponent, DailyChartsComponent, ActiveUsersComponent, ExplorSidbarComponent, RouterModule, NgIf],
+  imports: [ItemsShopComponent, DailyChartsComponent, ActiveUsersComponent, ExplorSidbarComponent, RouterModule, NgIf, HeadRoutePageComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
   standalone:true,
