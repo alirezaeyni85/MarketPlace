@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersActive } from '../../../core/Services/users-service.service';
+import { UsersActive } from '../../core/Services/users-service.service';
 import { CommonModule } from '@angular/common';
 
 @Component({

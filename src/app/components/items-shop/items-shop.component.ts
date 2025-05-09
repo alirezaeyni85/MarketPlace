@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceItems } from '../../../core/Services/items-shop.service';
-import { ItemsInter } from '../../../core/interfaces/items';
+import { ServiceItems } from '../../core/Services/items-shop.service';
+import { ItemsInter } from '../../core/interfaces/items';
 import { CommonModule } from '@angular/common';
-import { SavedItemsService } from '../../../core/Services/savedItems.service';
+import { SavedItemsService } from '../../core/Services/savedItems.service';
 
 @Component({
   selector: 'app-items-shop',
