@@ -12,7 +12,8 @@
 display: var(--dis-grid);
 grid-template-columns: 6% 94%;
 background-color:var(--bg-dark) ;
-height: 400vh;
+min-height: 100vh;
+height: 100%;
 }
 
 .left-content {
@@ -32,7 +33,7 @@ margin:0 auto;
 .all-icons{
     height: 100%;
     display: var(--dis-grid);
-    grid-template-rows: repeat(6, 2.7%);
+    grid-template-rows: repeat(6, 4rem);
     text-align: center;
 }
 .all-icons li {

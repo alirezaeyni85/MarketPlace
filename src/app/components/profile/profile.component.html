@@ -1,0 +1,46 @@
+<section>
+  <div class="container">
+<div class="left-items">
+<div class="card">
+    <img src="../assets\AvatarIcon.png" alt="">
+    <h1>Welcome, John Smith</h1>
+    <p>Looks like you are not verified yet. Verify yourself to use the full potential of Xtrader.</p>
+
+    <div class="check-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg>
+<p>Verify account</p>
+    </div>
+    <div class="lock-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4m0 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+</svg>
+<p>Two-factor Authentication ( 2FA )</p>
+    </div>
+ 
+</div>
+</div>
+<div class="right-items">
+  <h2>Following</h2>
+  <div class="folowed-users">
+  <div class="user-creators" *ngFor="let user of followedUser" >
+    
+                <img src="../assets\AvatarIcon.png" alt="">
+                <div class="info-user">
+                    <h4>{{user.title}}</h4>
+                    <p>{{user.countItems}}</p>
+                </div>
+               <button class="btn-follow">Unfollow</button>
+         
+        </div> 
+  </div>
+ 
+</div>
+
+
+  </div>
+
+<app-bought-cart></app-bought-cart>
+
+</section>

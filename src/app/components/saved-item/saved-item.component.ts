@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, DoCheck, Input, OnInit } from '@angular/core';
 import { SavedItemsService } from '../../core/Services/savedItems.service';
 import { CommonModule, NgFor } from '@angular/common';
 import { ItemsInter } from '../../core/interfaces/items';
@@ -13,16 +13,20 @@ import { ActivatedRoute } from '@angular/router';
   standalone:true,
 })
 export class SavedItemComponent implements OnInit {
-  public x =''
   public items:ItemsInter[] = [];
   public dataRoute:string = ''
 constructor(private savedItems:SavedItemsService,private activeRoute:ActivatedRoute){}
   ngOnInit(): void {
     this.items = this.savedItems.savedItems!;
-   console.log(this.savedItems.savedItems)
-    this.dataRoute = this.activeRoute.snapshot.data[0];
-
-
-    
+    this.dataRoute = this.activeRoute.snapshot.data[0];   
 }
+
+
+
+onDelete(id:number){
+ this.items =  this.items.filter(item => item.id !== id)
+ console.log(...this.items)
+
+}
+
 }

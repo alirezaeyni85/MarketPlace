@@ -7,20 +7,24 @@ import { RouterEvent, RouterLink, RouterModule } from '@angular/router';
 import { NgIf } from '@angular/common';
 import { SavedItemsService } from '../../core/Services/savedItems.service';
 import { Router } from '@angular/router';
+import { ProfileDirectoryDirective } from '../../core/directory/profile-directory.directive';
+import { InfoUserService } from '../../core/Services/info-user.service';
 
 @Component({
   selector: 'app-home-page',
-  imports: [ItemsShopComponent, DailyChartsComponent, ActiveUsersComponent, ExplorSidbarComponent, RouterModule, NgIf],
+  imports: [ItemsShopComponent, DailyChartsComponent, ActiveUsersComponent, ExplorSidbarComponent, RouterModule, NgIf , ProfileDirectoryDirective],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
   standalone:true,
 })
 export class HomePageComponent implements DoCheck{
   public isClicked = false;
-  constructor(private isClick:SavedItemsService, private router:Router){}
+  public isLoginUser = false;
+  constructor(private isClick:SavedItemsService, private router:Router, private isLogin: InfoUserService ){}
  
   ngDoCheck(): void {
-    this.isClicked = this.isClick.isClicked
+    this.isClicked = this.isClick.isClicked;
+    this.isLoginUser =  this.isLogin.isLogin;
   }
   onClick(){
    this.isClick.isClicked = true 

@@ -1,0 +1,64 @@
+.container{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: baseline;
+}
+.card {
+    display: grid;
+    background: #1D1932;
+    color: white;
+    padding: 1.2rem;
+    row-gap: 1rem;
+    border-radius: 1.2rem;
+
+}
+.card .check-item {
+    display: flex;
+    align-items: cetner;
+    border-bottom: 1px solid white  ;
+    padding: 1rem 0;
+    color:#6F4FF2;
+    column-gap: 1rem;
+
+}
+.card .lock-item{
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: #6F4FF2;
+    column-gap: 1rem;
+}
+.card .check-item svg {
+color: rgb(105, 255, 12);
+}.card .lock-item svg {
+color: rgb(0, 0, 0);
+}
+
+/* right  */
+.right-items {
+    margin-left: 2rem;
+
+}
+.right-items h2 {
+    margin-bottom: 1rem ;
+    color: white;
+
+}
+.folowed-users {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+ 
+    /* column-gap: 3rem; */
+
+}
+.right-items .user-creators button {
+background: red;
+border: none;
+padding: 0.5rem 2rem;
+font-weight: 700;
+
+}
+.right-items .user-creators {
+    max-width: 21rem;
+}

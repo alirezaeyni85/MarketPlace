@@ -1,0 +1,34 @@
+
+section{
+    color: white;
+}
+section h2 {
+    margin: 1rem ;
+}
+.bought-items {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 3rem;
+text-align: center;
+max-width: 80rem;
+}
+.bought-item {
+    /* align-items: center; */
+    background: #1D1932;
+    padding: 1em;
+    position: relative;
+    border-radius: 2rem ;
+}
+.bought-item h1 {
+    text-align: left;
+    margin-left: 1rem;
+    padding-top:  0.5rem ;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bought-item .img-profile {
+    position:absolute;
+    bottom: 1.3rem;
+    right: 3rem;
+
+}

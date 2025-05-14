@@ -5,7 +5,7 @@ import { AppComponent } from './app/app.component';
 import { provideRouter, Routes } from '@angular/router';
 import { HomePageComponent } from './app/Home/home-page/home-page.component';
 import { SavedItemComponent } from './app/components/saved-item/saved-item.component';
-import { ProfileUserComponent } from './app/components/profile-user/profile-user.component';
+import { ProfileUserComponent } from './app/components/settingProfile/profile-user.component';
 
 bootstrapApplication(AppComponent,{
   providers:[
