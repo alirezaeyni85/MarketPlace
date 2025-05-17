@@ -92,3 +92,88 @@
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
+/* shopping carts */
+
+section{
+    color: white;
+}
+section h2 {
+    margin: 1rem ;
+}
+.bought-items {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 3rem;
+text-align: center;
+max-width: 80rem;
+}
+.bought-item {
+    /* align-items: center; */
+    background: #1D1932;
+    padding: 1em;
+    position: relative;
+    border-radius: 2rem ;
+}
+.bought-item h1 {
+    text-align: left;
+    margin-left: 1rem;
+    padding-top:  0.5rem ;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bought-item .img-profile {
+    position:absolute;
+    bottom: 1.3rem;
+    right: 3rem;
+
+}
+
+
+
+
+
+/* Statistics */
+
+.cards{
+    color: white;
+    display: grid;  
+}
+.card{
+    align-items: center;
+    background: #1D1932;
+    display: flex;
+    column-gap: 2.5rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+     margin-bottom: 2.3rem;
+} 
+.card svg {
+    background:#6F4FF2 ;
+    padding: 1rem;
+    border-radius: 1.4rem;
+    -webkit-border-radius: 1.4rem;
+    -moz-border-radius: 1.4rem;
+    -ms-border-radius: 1.4rem;
+    -o-border-radius: 1.4rem;
+}
+.percent-followers {
+    position: relative;
+    bottom: 1rem;
+    color: #50BB25;
+
+}
+.card:nth-child(2) svg{
+    background-color: red;
+}
+.card:nth-child(2) .percent-followers{
+    color: red;
+}
+
+
+.card:nth-child(3) svg{
+    background-color: #50BB25;
+}

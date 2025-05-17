@@ -1,9 +1,10 @@
 import { Injectable } from "@angular/core";
+import { ItemsInter } from "../../interfaces/items";
 // import { ItemsInter } from "../interfaces/items.interface";
 
 @Injectable({providedIn:'root'})
 export class ServiceItems{
-    items:any[] = [
+    items:ItemsInter[] = [
         {
             id:1,
             title:"Liquid Wave",

@@ -1,5 +1,5 @@
 import { Component, DoCheck, Input, OnInit } from '@angular/core';
-import { SavedItemsService } from '../../core/Services/savedItems.service';
+import { SavedItemsService } from '../../core/Services/Items/savedItems.service';
 import { CommonModule, NgFor } from '@angular/common';
 import { ItemsInter } from '../../core/interfaces/items';
 import { HeadRoutePageComponent } from "../head-route-page/head-route-page.component";

@@ -1,7 +1,7 @@
 
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { appConfig } from './app/Configuration/app.config';
+import { AppComponent } from './app/MainComponent/app.component';
 import { provideRouter, Routes } from '@angular/router';
 import { HomePageComponent } from './app/Home/home-page/home-page.component';
 import { SavedItemComponent } from './app/components/saved-item/saved-item.component';

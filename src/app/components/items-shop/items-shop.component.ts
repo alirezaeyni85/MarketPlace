@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceItems } from '../../core/Services/items-shop.service';
+import { ServiceItems } from '../../core/Services/Items/items-shop.service';
 import { ItemsInter } from '../../core/interfaces/items';
 import { CommonModule } from '@angular/common';
-import { SavedItemsService } from '../../core/Services/savedItems.service';
+import { SavedItemsService } from '../../core/Services/Items/savedItems.service';
 import { ProfileDirectoryDirective } from '../../core/directory/profile-directory.directive';
 
 @Component({

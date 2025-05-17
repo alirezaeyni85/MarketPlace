@@ -1,0 +1,10 @@
+.container-header .cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    margin: 2rem 0  5rem 0;
+}
+.followers-artWork h2 {
+    margin: 0.8rem 0;
+}
+

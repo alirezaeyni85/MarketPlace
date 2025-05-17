@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
+import { ActvieUsers, UsersCreators } from '../../interfaces/Users/users';
 
 @Injectable({providedIn:'root'})
 export class UsersActive{
-     acitveUsers:any  = [
+     acitveUsers:ActvieUsers[]  = [
         {id:1,
              title:'Papaya', 
              info:'Purchase by you for 0.05 ETH', lastSeen:'12 mins ago'
@@ -15,10 +16,10 @@ export class UsersActive{
    
     ]
 
-     usersCreators:any  =[
+     usersCreators:UsersCreators[]  =[
         // { id:2,  title:'Papaya', countItems:'60 Items', },
 
-        {id:'1', title:'Papaya', countItems:'60 Items'  },
+        {id:1, title:'Papaya', countItems:'60 Items'  },
         {id:2, title:'Papaya', countItems:'60 Items',  },
         {id:3, title:'Papaya', countItems:'60 Items',  },
         {id:4, title:'Papaya', countItems:'60 Items',  },
@@ -28,7 +29,7 @@ export class UsersActive{
         {id:8, title:'Papaya', countItems:'60 Items',  },
     ]
 
-     followedUsers:any =[
+     followedUsers:UsersCreators[] =[
         {id:1, title:'Papaya', countItems:'60 Items'  },
         {id:2, title:'Papaya', countItems:'60 Items',  },
         {id:3, title:'Papaya', countItems:'60 Items',  },

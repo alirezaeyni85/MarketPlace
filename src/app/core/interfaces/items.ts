@@ -6,4 +6,7 @@
         tiemEnd:string;
         finishTime:String[];
     }
-
+    export interface ProductsProfile {
+        id:number,
+    title:string, }
+    

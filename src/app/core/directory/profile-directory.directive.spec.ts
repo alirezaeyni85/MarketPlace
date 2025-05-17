@@ -1,4 +1,4 @@
-import { ProfileDirectoryDirective } from './profile-directory.directive';
+import { ProfileDirectoryDirective } from './Profile-Users/profile-directory.directive';
 
 describe('ProfileDirectoryDirective', () => {
   it('should create an instance', () => {

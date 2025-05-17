@@ -1,18 +1,19 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck } from "@angular/core";
 import { ItemsShopComponent } from "../../components/items-shop/items-shop.component";
 import { DailyChartsComponent } from "../../components/daily-charts/daily-charts.component";
 import { ActiveUsersComponent } from "../../components/active-users/active-users.component";
 import { ExplorSidbarComponent } from "../../components/explor-sidbar/explor-sidbar.component";
-import { RouterEvent, RouterLink, RouterModule } from '@angular/router';
-import { NgIf } from '@angular/common';
-import { SavedItemsService } from '../../core/Services/savedItems.service';
-import { Router } from '@angular/router';
-import { ProfileDirectoryDirective } from '../../core/directory/profile-directory.directive';
-import { InfoUserService } from '../../core/Services/info-user.service';
+import { Router, RouterModule } from "@angular/router";
+import { ProfileDirectoryDirective } from "../../core/directory/profile-directory.directive";
+import { NgIf } from "@angular/common";
+import { SavedItemsService } from "../../core/Services/Items/savedItems.service";
+import { InfoUserService } from "../../core/Services/InfoUsers/info-user.service";
+import { NavbarComponent } from "../navbarPage/navbar/navbar.component";
+
 
 @Component({
   selector: 'app-home-page',
-  imports: [ItemsShopComponent, DailyChartsComponent, ActiveUsersComponent, ExplorSidbarComponent, RouterModule, NgIf , ProfileDirectoryDirective],
+  imports: [ItemsShopComponent, DailyChartsComponent, ActiveUsersComponent, ExplorSidbarComponent, RouterModule, NgIf, ProfileDirectoryDirective, NavbarComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
   standalone:true,
