@@ -1,0 +1,11 @@
+.group-of-route {
+    display: flex;
+    column-gap: 2.5rem;
+    margin-top: 4rem;
+}
+.group-of-route li a {
+    color: white;
+}
+.group-of-route li  {
+    list-style: none;
+}

@@ -5,11 +5,12 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { InfoUserService } from '../../core/Services/InfoUsers/info-user.service';
 import { NgIf } from '@angular/common';
 import { ProfileComponent } from "../profile/mainPageProfile/profile.component";
+import { NavLinkComponent } from "./navbarLink/nav-link/nav-link.component";
 
 
 @Component({
   selector: 'app-profile-user',
-  imports: [HeadRoutePageComponent, ReactiveFormsModule, NgIf, RouterModule],
+  imports: [HeadRoutePageComponent, ReactiveFormsModule, NgIf, RouterModule, NavLinkComponent],
   templateUrl: './profile-user.component.html',
   styleUrl: './profile-user.component.css'
 })
@@ -22,6 +23,7 @@ export class ProfileUserComponent implements OnInit{
  
   ngOnInit(): void {
     this.dataRoute = this.routeActive.snapshot.data[0]
+    console.log('from profile setting',this.routeActive.snapshot.data[0])
    }
    
     groupInfo  = new FormGroup({

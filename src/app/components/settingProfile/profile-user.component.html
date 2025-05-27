@@ -1,21 +1,15 @@
 
 <app-head-route-page  [dataInput]="dataRoute" ></app-head-route-page>
 <router-outlet></router-outlet>
+@if (dataRoute) {
 
-<section *ngIf="false" >
+<section  >
 
 <header  >
+      <app-nav-link></app-nav-link>
+      @if(dataRoute){
 
-   <div class="link-header">
-      <ul class="group-of-route">
-         <li>Setting</li>
-         <li>Profile</li>
-         <li>Application</li>
-         <li>Security</li>
-         <li>Activity</li>
-         <li>Payment Method</li>
-      </ul>
-     </div>
+      }
      <div class="container-info-user" [formGroup]="groupInfo">
       <div class="left-input-info">
          <h3 class="title-setting">User profile</h3>
@@ -131,3 +125,5 @@
 
 </footer>
 </section>
+
+}

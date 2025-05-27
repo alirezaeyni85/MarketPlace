@@ -15,6 +15,6 @@ export class CollectionsCartComponent implements OnInit {
   
 ngOnInit(): void {
   this.collectionCarts = this.collectionServce.collections;
-  console.log(this.routeActive.snapshot.data[0])
+  console.log('from Profile Component',this.routeActive.snapshot.data[0]);
 }
 }

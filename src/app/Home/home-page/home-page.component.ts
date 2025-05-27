@@ -4,7 +4,7 @@ import { DailyChartsComponent } from "../../components/daily-charts/daily-charts
 import { ActiveUsersComponent } from "../../components/active-users/active-users.component";
 import { ExplorSidbarComponent } from "../../components/explor-sidbar/explor-sidbar.component";
 import { Router, RouterModule } from "@angular/router";
-import { ProfileDirectoryDirective } from "../../core/directory/profile-directory.directive";
+import { ProfileDirectoryDirective } from "../../core/directory/Profile-Users/profile-directory.directive";
 import { NgIf } from "@angular/common";
 import { SavedItemsService } from "../../core/Services/Items/savedItems.service";
 import { InfoUserService } from "../../core/Services/InfoUsers/info-user.service";

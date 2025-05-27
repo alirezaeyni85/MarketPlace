@@ -15,9 +15,16 @@
         <p>3h 1m 50s</p>
          <p>0.15 ETH</p>
      </div>
+     <div class="container-btns">
+   <div class="btn-buy" style="background-color: rgb(0, 82, 234); ">
+      <button (click)="OnFollow(item.id)" >{{isFollow ? 'Follow':'UnFollow'}}</button>
+
+     </div>
      <div class="btn-buy" style="background-color: rgb(218, 29, 0); ">
       <button (click)="onDelete(item.id)" >Delete</button>
      </div>
+     </div>
+  
     </div>
   
 

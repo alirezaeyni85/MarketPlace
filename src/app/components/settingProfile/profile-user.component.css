@@ -1,12 +1,4 @@
-.group-of-route {
-    display: flex;
-    color: white;
-    column-gap: 2.5rem;
-    margin-top: 4rem;
-}
-.group-of-route li {
-    list-style: none;
-}
+
 .container-info-user {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

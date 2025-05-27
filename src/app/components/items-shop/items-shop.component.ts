@@ -3,7 +3,7 @@ import { ServiceItems } from '../../core/Services/Items/items-shop.service';
 import { ItemsInter } from '../../core/interfaces/items';
 import { CommonModule } from '@angular/common';
 import { SavedItemsService } from '../../core/Services/Items/savedItems.service';
-import { ProfileDirectoryDirective } from '../../core/directory/profile-directory.directive';
+import { ProfileDirectoryDirective } from '../../core/directory/Profile-Users/profile-directory.directive';
 
 @Component({
   selector: 'app-items-shop',
