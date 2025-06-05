@@ -12,7 +12,7 @@ import { ProfileDirectoryDirective } from '../../core/directory/Profile-Users/pr
   styleUrl: './items-shop.component.css'
 })
 export class ItemsShopComponent implements OnInit {
-
+ public isClick:boolean = false; 
  public items:ItemsInter[] = []
   constructor(private itemsService:ServiceItems, private saveItems:SavedItemsService) { }
 
@@ -22,6 +22,7 @@ export class ItemsShopComponent implements OnInit {
   }
 
   onSave(id:number){
+    this.isClick = !this.isClick
 this.saveItems.savedItems.push(...this.itemsService.items.filter(item=>item.id == id) );
 
   }

@@ -41,6 +41,7 @@ onSaveInfo(){
     email:this.groupInfo.value.email,
     password:this.groupInfo.value.password
   } 
+  console.log('Hellow From setting page ')
 this.infoUser.isLogin =true
 
 }

@@ -23,26 +23,32 @@ export class SavedItemComponent implements OnInit {
 
 
 
-constructor(private userFollowedService:UsersActive, private savedItems:SavedItemsService,private activeRoute:ActivatedRoute){}
+constructor(
+  private userFollowedService:UsersActive,
+   private savedItems:SavedItemsService,
+   private activeRoute:ActivatedRoute
+  ){}
   ngOnInit(): void {
     this.items = this.savedItems.savedItems!;
-    this.dataRoute = this.activeRoute.snapshot.data[0];   
+    this.dataRoute = this.activeRoute.snapshot.data[0];  
+    console.log('from Product Saved',this.userFollowedService) 
 }
 
 
 
 onDelete(id:number){
- this.items =  this.items.filter(item => item.id !== id)
- console.log(...this.items)
+this.items = this.items.filter(item => {
+  console.log('items id from saved Products Component',item.id)
+ return  item.id !== id
+})
+
 
 }
 OnFollow(id:number){
 this.isFollow = !this.isFollow
 }
 
-deleteItem(id:number){
-  this.userFollowedService.followedUsers = this.userFollowedService.followedUsers.filter(item => item.id == id)
-}
+
 pushItem(id:number){
 
 }

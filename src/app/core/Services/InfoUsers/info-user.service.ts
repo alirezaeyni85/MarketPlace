@@ -8,5 +8,6 @@ export class InfoUserService {
   constructor() { }
 
   public infoUser = {}
-  public isLogin: boolean =false
+  public isLogin: boolean =false;
+
 }
