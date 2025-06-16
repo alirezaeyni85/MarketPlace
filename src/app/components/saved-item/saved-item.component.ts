@@ -45,7 +45,7 @@ this.items = this.items.filter(item => {
 
 }
 OnFollow(id:number){
-this.isFollow = !this.isFollow
+  this.isFollow = !this.isFollow
 }
 
 

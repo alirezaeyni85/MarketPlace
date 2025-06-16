@@ -50,16 +50,20 @@
                   <input type="text" formControlName="email">
    
                </div>
-            </div><div class="input-user">
+            </div>
+            <div class="input-user">
                <label for="">Password</label>
-               <div>
-                  <input type="text" formControlName="password">
+               <div  >
+                  <input  type="text" formControlName="password">
+                  @if (groupInfo.get('password')?.valid || groupInfo.get('password')?.touched) {
+                  <p  class="warning-text" >اعدادباید ۸ رقم باشد!</p>
+                  }
    
                </div>
             </div>
       
             
-            <div class="save-info-user" [hidden]="!groupInfo.valid">
+            <div class="save-info-user">
                <button (click)="onSaveInfo()">Save</button>
             </div>
          

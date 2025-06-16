@@ -9,7 +9,7 @@ import { autenticationGuard } from '../core/gaurd/autentication.guard';
 export const routes: Routes = [
     {path:'', component:HomePageComponent},
   {path:'', component:HomePageComponent , children:[
-    {path:'saved', component:SavedItemComponent,data:['Saved'],canActivate:[autenticationGuard] },
+    {path:'saved', component:SavedItemComponent,data:['saved'],canActivate:[autenticationGuard] },
     {path:'bids', component:BidsComponent ,data:['Bids']},
     {path:'setting', component:ProfileUserComponent , data:['Setting']},
 

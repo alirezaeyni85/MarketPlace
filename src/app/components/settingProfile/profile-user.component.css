@@ -1,4 +1,17 @@
 
+
+input.ng-touched {
+
+ border: red 0.1px solid!important;
+
+    /* background: green; */
+}
+input.ng-valid{
+ border: none !important;
+
+}
+
+
 .container-info-user {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -84,6 +97,19 @@
 footer{
     margin-top: 3rem;
 }
+
+
+
+
+/* for inputs  */
+.warning-text {
+border-radius: 0.2rem;
+background: #00000040;;
+padding: 0  0.5rem;
+margin-top: 0.5rem;
+width: max-content;
+}
+
 
 
 

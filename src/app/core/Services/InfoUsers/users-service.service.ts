@@ -29,7 +29,7 @@ export class UsersActive{
         {id:8, title:'Papaya', countItems:'60 Items',  },
     ]
 
-     followedUsers:UsersCreators[] =[
+     followedUsers:any[] =[
         {id:1, title:'Papaya', countItems:'60 Items'  },
         {id:2, title:'Papaya', countItems:'60 Items',  },
         {id:3, title:'Papaya', countItems:'60 Items',  },

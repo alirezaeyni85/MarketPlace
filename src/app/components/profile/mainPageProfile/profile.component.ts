@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit , DoCheck {
   public followedUser:any[] =[] ;
   public routeActive:any ;
   constructor(private userFollowedService:UsersActive, private activatedRoute:ActivatedRoute){}
-    @Output('dataProfile') data = new EventEmitter<any>()
+  
 ngOnInit(): void {
   this.followedUser =this.userFollowedService.followedUsers
 
